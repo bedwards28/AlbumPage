@@ -2,8 +2,24 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 th, td {
     padding: 10px;
     text-align: center;
     width: 300px;
+}
+
+tbody td {
+    font-style: italic;
+    background-color: lemonchiffon;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #1f427a;
+    color: white;
 }

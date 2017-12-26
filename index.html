@@ -4,10 +4,28 @@
         <title>Metallica - The Black Album</title>
         <link href="albumStyles.css" rel="stylesheet" type="text/css"/>
         <style>
+            @font-face {
+                font-family: "Risque";
+                src: url('https://fonts.googleapis.com/css?family=Risque');
+            }
+            @font-face {
+                font-family: "Anton";
+                src: url('https://fonts.googleapis.com/css?family=Anton');
+            }
             #albumCover {
-                width: 350px;
+                background-image: url("images/AlbumCover.jpeg");
+                background-size: 100% 100%;
                 display: block;
                 margin: auto;
+                width: 350px;
+                height: 350px;
+            }
+            #albumName {
+                font-family: "Risque", cursive;
+                font-style: italic;
+            }
+            #members {
+                font-family: "Anton", sans-serif;
             }
             .center {
                 margin: auto;
@@ -15,14 +33,16 @@
             }
             #trackTable {
                 margin: auto;
-                width: 50%;
+                width: 75%;
             }
         </style>
     </head>
     <body>
         <div class="center">
-            <img id="albumCover" src="images/AlbumCover.jpeg" alt="album cover"/>
-            <h1>Metallica (a.k.a The Black Album)</h1>
+            <div id="albumCover" title="Album Cover">
+                <!-- album cover -->
+            </div>
+            <h1 id="albumName">Metallica (a.k.a The Black Album)</h1>
             <h2><a href="http://www.metallica.com" target="_blank">Metallica</a></h2>
             <h3>August 12, 1991</h3>
 
@@ -35,13 +55,16 @@
             </p>
 
             <hr/>
-            <h2>Band Memebers and Producers</h2>
-            <h4>James Hetfield - Lead vocals, rhythm guitar, production</h4>
-            <h4>Kirk Hammett - Lead Guitar</h4>
-            <h4>Jason Newsted - Bass</h4>
-            <h4>Lars Ulrich - Drums, production</h4>
-            <h4>Michael Kamen - Orchestral arrangement on <i>Nothing Else Matters</i></h4>
-            <br/>
+
+            <div id="members">
+                <h2>Band Members and Producers</h2>
+                <h4>James Hetfield - Lead vocals, rhythm guitar, production</h4>
+                <h4>Kirk Hammett - Lead Guitar</h4>
+                <h4>Jason Newsted - Bass</h4>
+                <h4>Lars Ulrich - Drums, production</h4>
+                <h4>Michael Kamen - Orchestral arrangement on <i>Nothing Else Matters</i></h4>
+                <br/>
+            </div>
 
             <div id="trackTable">
                 <table>
