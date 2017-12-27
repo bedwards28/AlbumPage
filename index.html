@@ -1,144 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Metallica - The Black Album</title>
-        <link href="albumStyles.css" rel="stylesheet" type="text/css"/>
-        <style>
-            @font-face {
-                font-family: "Risque";
-                src: url('https://fonts.googleapis.com/css?family=Risque');
-            }
-            @font-face {
-                font-family: "Anton";
-                src: url('https://fonts.googleapis.com/css?family=Anton');
-            }
-            #albumCover {
-                background-image: url("images/AlbumCover.jpeg");
-                background-size: 100% 100%;
-                display: block;
-                margin: auto;
-                width: 350px;
-                height: 350px;
-            }
-            #albumName {
-                font-family: "Risque", cursive;
-                font-style: italic;
-            }
-            #members {
-                font-family: "Anton", sans-serif;
-            }
-            .center {
-                margin: auto;
-                width: 50%;
-            }
-            #trackTable {
-                margin: auto;
-                width: 75%;
-            }
-        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="albumStyles.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="center">
-            <div id="albumCover" title="Album Cover">
-                <!-- album cover -->
-            </div>
-            <h1 id="albumName">Metallica (a.k.a The Black Album)</h1>
-            <h2><a href="http://www.metallica.com" target="_blank">Metallica</a></h2>
-            <h3>August 12, 1991</h3>
+        <div class="container">
+            <div class="center">
+                <div class="albumCover img-circle" title="Album Cover">
+                    <!-- album cover -->
+                </div>
+                <h1 id="albumName">Metallica (a.k.a The Black Album)</h1>
+                <h2><a href="http://www.metallica.com" target="_blank">Metallica</a></h2>
+                <h3>August 12, 1991</h3>
 
-            <p>
-                <i>Metallica</i> (commonly know as The Black Album) is the
-                self-titled fifth studio album by American heavy metal band
-                Metallica. The album received widespread critical acclaim and
-                became the band's best-selling album. The album is ranked 255 on
-                Rolling Stone's 500 greatest albums of all time.
-            </p>
+                <p>
+                    <i>Metallica</i> (commonly know as The Black Album) is the
+                    self-titled fifth studio album by American heavy metal band
+                    Metallica. The album received widespread critical acclaim and
+                    became the band's best-selling album. The album is ranked 255 on
+                    Rolling Stone's 500 greatest albums of all time.
+                </p>
 
-            <hr/>
+                <hr/>
 
-            <div id="members">
-                <h2>Band Members and Producers</h2>
-                <h4>James Hetfield - Lead vocals, rhythm guitar, production</h4>
-                <h4>Kirk Hammett - Lead Guitar</h4>
-                <h4>Jason Newsted - Bass</h4>
-                <h4>Lars Ulrich - Drums, production</h4>
-                <h4>Michael Kamen - Orchestral arrangement on <i>Nothing Else Matters</i></h4>
-                <br/>
-            </div>
+                <div id="members">
+                    <h2>Band Members and Producers</h2>
+                    <h4>James Hetfield - Lead vocals, rhythm guitar, production</h4>
+                    <h4>Kirk Hammett - Lead Guitar</h4>
+                    <h4>Jason Newsted - Bass</h4>
+                    <h4>Lars Ulrich - Drums, production</h4>
+                    <h4>Michael Kamen - Orchestral arrangement on <i>Nothing Else Matters</i></h4>
+                    <br/>
+                </div>
 
-            <div id="trackTable">
-                <table>
-                    <caption style="padding-bottom: 10px;"><b>Tracks</b></caption>
-                    <thead>
-                        <tr bgcolor="grey">
-                            <th>Track #</th>
-                            <th>Track Title</th>
-                            <th>Track Length</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Enter Sandman</td>
-                            <td>5:34</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Sad but True</td>
-                            <td>5:24</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Holier Than Thou</td>
-                            <td>3:48</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>The Unforgivern</td>
-                            <td>6:26</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Wherever I May Roam</td>
-                            <td>6:44</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Don't Tread on Me</td>
-                            <td>4:01</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Through the Never</td>
-                            <td>4:03</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Nothing Else Matters</td>
-                            <td>6:30</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Of Wolf and Man</td>
-                            <td>4:17</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>The God That Failed</td>
-                            <td>5:09</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>My Fried of Misery</td>
-                            <td>6:48</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>The Struggle Within</td>
-                            <td>3:56</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="trackTable" class="table-responsive">
+                    <table class="table-striped"> 
+                        <caption><b>Tracks</b></caption>
+                        <thead>
+                            <tr>
+                                <th>Track #</th>
+                                <th>Track Title</th>
+                                <th>Track Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Enter Sandman</td>
+                                <td>5:34</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Sad but True</td>
+                                <td>5:24</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Holier Than Thou</td>
+                                <td>3:48</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>The Unforgivern</td>
+                                <td>6:26</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Wherever I May Roam</td>
+                                <td>6:44</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Don't Tread on Me</td>
+                                <td>4:01</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Through the Never</td>
+                                <td>4:03</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Nothing Else Matters</td>
+                                <td>6:30</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Of Wolf and Man</td>
+                                <td>4:17</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>The God That Failed</td>
+                                <td>5:09</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>My Fried of Misery</td>
+                                <td>6:48</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>The Struggle Within</td>
+                                <td>3:56</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </body>
